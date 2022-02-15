@@ -25,18 +25,27 @@ class LinkedList(object):
 		Assume the first position is "1".
 		Return "None" if position is not in the list."""
 
+		# create a counter to manage position and counter relation
 		counter = 1
-		current = self.element
+		current = self.head
 
-		if not position or position > 1:
+		# return None if unwanted condition
+		if not position or position < 1:
 			return None
 
+		# iterate through all elements and mange counter simultaneously
+		# if position == counter ==> retunr respective element
 		while current and counter <= position:
-			pass
-
+			if counter == position:
+				return current
+			current = current.next
+			counter += 1
+		
+		# return None if not any conditon met
+		return None
 
 	def print_list(self):
-		temp = self.element
+		temp = self.head
 		while(temp):
 			print(temp.value)
 			temp = temp.next 
@@ -64,7 +73,9 @@ if __name__ == '__main__':
 	ll.print_list()
 
 	# get position of an element
-	ll.get_position(2).value
+	print("Value at 1st Position", ll.get_position(1).value)
+	print("Value at 2st Position", ll.get_position(2).value)
+	print("Value at 4rth Position", ll.get_position(4).value)
 	
 	
 
