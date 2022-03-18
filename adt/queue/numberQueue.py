@@ -23,8 +23,12 @@ class Queue:
     def dequeue(self):
         if self.queue:
             self.queue.pop(0)
+    
+    def IsEmpty(self):
+        if len(self.queue) == 0:
+            print("Queue is Empty")
         else:
-            print("Queue is empty for now")
+            print("Queue is not Empty")
         
     def viewQueue(self):
         print(self.queue)
@@ -36,16 +40,20 @@ if __name__ == "__main__":
     q.enqueue(3)
     
     # should be [1,2,3]
+    q.IsEmpty()
     q.viewQueue()
 
     # should be [2,3]
     q.dequeue()
+    q.IsEmpty()
     q.viewQueue()
 
     # should be [3]
     q.dequeue()
+    q.IsEmpty()
     q.viewQueue()
 
     # should print "Queue is empty for now"
     q.dequeue()
     q.dequeue()
+    q.IsEmpty()
