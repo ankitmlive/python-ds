@@ -1,4 +1,7 @@
-# python programmer for linear search 
+"""
+Python programme for linear search
+The time complexity of the above algorithm is O(n), because it checks each element in list
+"""
 
 def linear_search(arr, num):
     n=len(arr)
