@@ -20,6 +20,6 @@ def BubbleSort(arr):
             break
 
 if __name__ == "__main__":
-    input_arr = [12,23,34,45,56,67,78,89,3,8,11,32]
+    input_arr = [12,23,34,45,56,67,78,89,3,8,11,32,28]
     BubbleSort(input_arr)
     print("Sorted Elements:", input_arr)
