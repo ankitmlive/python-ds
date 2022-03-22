@@ -8,7 +8,8 @@ Algorithm: It uses the divide and conquer approch,
     3: This implementation is created using iterative approach because recursion perfomrs very poor in Python
 """
 
-def binary_search(arr, num):
+def binary_search_iterative(arr, num):
+    """ Binary Search using Iterative approach """
     n=len(arr)
     first=0
     last=n-1
@@ -25,5 +26,5 @@ def binary_search(arr, num):
 if __name__=="__main__":
     input_num = int(input("Please Input number to be searched from the given list: "))
     arr=[23, 36, 48, 54, 63, 77, 89, 90]
-    position=binary_search(arr, input_num)
+    position=binary_search_iterative(arr, input_num)
     print(f"Position of {input_num} in given array is {position}")
