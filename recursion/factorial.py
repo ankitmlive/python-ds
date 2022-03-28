@@ -1,6 +1,6 @@
 """
 A Factorial is a product off all number for a given number
-Example: fact(5) = 5*4*3*2*1
+Example: fact(5) = 5*4*3*2*1 = 120
 This is a factorial programme using recursion
 """
 
