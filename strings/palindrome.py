@@ -17,8 +17,14 @@ def naive_palindrome(my_str):
 
 
 # DS Aproach
-def palindrome(str:str):
-    pass
+def palindrome(word:str):
+   start, end = 0, len(word)-1
+   while start < end:
+      if word[start] != word[end]:
+         return False
+      start += 1
+      end -= 1
+   return True
 
 if __name__ == "__main__":
    my_str = 'aIbohPhoBiA'
@@ -26,4 +32,4 @@ if __name__ == "__main__":
    if approach == "naive":
       naive_palindrome(my_str)
    elif approach == "ds":
-      pass
+      palindrome(my_str)
