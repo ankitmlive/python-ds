@@ -1,0 +1,7 @@
+Best resource to learn Microservice
+
+Main Website
+https://microservices.io/patterns/apigateway.html
+
+Patterns
+https://microservices.io/patterns/apigateway.html
